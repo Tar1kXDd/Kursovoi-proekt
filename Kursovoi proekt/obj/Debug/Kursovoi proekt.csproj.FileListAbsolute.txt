@@ -1,0 +1,56 @@
+C:\Users\tarun\OneDrive\Рабочий стол\Учёба\Учёба 3й курс\kursach\Kursovoi proekt\Kursovoi proekt\bin\Debug\Kursovoi proekt.exe.config
+C:\Users\tarun\OneDrive\Рабочий стол\Учёба\Учёба 3й курс\kursach\Kursovoi proekt\Kursovoi proekt\bin\Debug\Kursovoi proekt.exe
+C:\Users\tarun\OneDrive\Рабочий стол\Учёба\Учёба 3й курс\kursach\Kursovoi proekt\Kursovoi proekt\bin\Debug\Kursovoi proekt.pdb
+C:\Users\tarun\OneDrive\Рабочий стол\Учёба\Учёба 3й курс\kursach\Kursovoi proekt\Kursovoi proekt\bin\Debug\EntityFramework.dll
+C:\Users\tarun\OneDrive\Рабочий стол\Учёба\Учёба 3й курс\kursach\Kursovoi proekt\Kursovoi proekt\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\tarun\OneDrive\Рабочий стол\Учёба\Учёба 3й курс\kursach\Kursovoi proekt\Kursovoi proekt\bin\Debug\EntityFramework.xml
+C:\Users\tarun\OneDrive\Рабочий стол\Учёба\Учёба 3й курс\kursach\Kursovoi proekt\Kursovoi proekt\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\tarun\OneDrive\Рабочий стол\Учёба\Учёба 3й курс\kursach\Kursovoi proekt\Kursovoi proekt\obj\Debug\Kursovoi proekt.csproj.AssemblyReference.cache
+C:\Users\tarun\OneDrive\Рабочий стол\Учёба\Учёба 3й курс\kursach\Kursovoi proekt\Kursovoi proekt\obj\Debug\Kursovoi proekt.csproj.SuggestedBindingRedirects.cache
+C:\Users\tarun\OneDrive\Рабочий стол\Учёба\Учёба 3й курс\kursach\Kursovoi proekt\Kursovoi proekt\obj\Debug\MainWindow.g.cs
+C:\Users\tarun\OneDrive\Рабочий стол\Учёба\Учёба 3й курс\kursach\Kursovoi proekt\Kursovoi proekt\obj\Debug\App.g.cs
+C:\Users\tarun\OneDrive\Рабочий стол\Учёба\Учёба 3й курс\kursach\Kursovoi proekt\Kursovoi proekt\obj\Debug\Kursovoi proekt_Content.g.cs
+C:\Users\tarun\OneDrive\Рабочий стол\Учёба\Учёба 3й курс\kursach\Kursovoi proekt\Kursovoi proekt\obj\Debug\Kursovoi proekt_MarkupCompile.cache
+C:\Users\tarun\OneDrive\Рабочий стол\Учёба\Учёба 3й курс\kursach\Kursovoi proekt\Kursovoi proekt\obj\Debug\Kursovoi proekt_MarkupCompile.lref
+C:\Users\tarun\OneDrive\Рабочий стол\Учёба\Учёба 3й курс\kursach\Kursovoi proekt\Kursovoi proekt\obj\Debug\MainWindow.baml
+C:\Users\tarun\OneDrive\Рабочий стол\Учёба\Учёба 3й курс\kursach\Kursovoi proekt\Kursovoi proekt\obj\Debug\Kursovoi proekt.g.resources
+C:\Users\tarun\OneDrive\Рабочий стол\Учёба\Учёба 3й курс\kursach\Kursovoi proekt\Kursovoi proekt\obj\Debug\Kursovoi_proekt.Properties.Resources.resources
+C:\Users\tarun\OneDrive\Рабочий стол\Учёба\Учёба 3й курс\kursach\Kursovoi proekt\Kursovoi proekt\obj\Debug\Kursovoi proekt.csproj.GenerateResource.cache
+C:\Users\tarun\OneDrive\Рабочий стол\Учёба\Учёба 3й курс\kursach\Kursovoi proekt\Kursovoi proekt\obj\Debug\Kursovoi proekt.csproj.CoreCompileInputs.cache
+C:\Users\tarun\OneDrive\Рабочий стол\Учёба\Учёба 3й курс\kursach\Kursovoi proekt\Kursovoi proekt\obj\Debug\Kursovoi proekt.csproj.CopyComplete
+C:\Users\tarun\OneDrive\Рабочий стол\Учёба\Учёба 3й курс\kursach\Kursovoi proekt\Kursovoi proekt\obj\Debug\Kursovoi proekt.exe
+C:\Users\tarun\OneDrive\Рабочий стол\Учёба\Учёба 3й курс\kursach\Kursovoi proekt\Kursovoi proekt\obj\Debug\Kursovoi proekt.pdb
+C:\Users\tarun\OneDrive\Рабочий стол\Учёба\Учёба 3й курс\kursach\Kursovoi proekt\Kursovoi proekt\obj\Debug\Autorisation.g.cs
+C:\Users\tarun\OneDrive\Рабочий стол\Учёба\Учёба 3й курс\kursach\Kursovoi proekt\Kursovoi proekt\obj\Debug\Autorisation.baml
+C:\Users\tarun\OneDrive\Рабочий стол\Учёба\Учёба 3й курс\kursach\Kursovoi proekt\Kursovoi proekt\obj\Debug\InfoNotebook.g.cs
+C:\Users\tarun\OneDrive\Рабочий стол\Учёба\Учёба 3й курс\kursach\Kursovoi proekt\Kursovoi proekt\obj\Debug\InfoNotebook.baml
+C:\Users\tarun\OneDrive\Рабочий стол\Учёба\Учёба 3й курс\kursach\Kursovoi proekt\Kursovoi proekt\obj\Debug\AddAdresWin.g.cs
+C:\Users\tarun\OneDrive\Рабочий стол\Учёба\Учёба 3й курс\kursach\Kursovoi proekt\Kursovoi proekt\obj\Debug\AddAdresWin.baml
+C:\Users\tarun\OneDrive\Рабочий стол\Kursovoi proekt\Kursovoi proekt\bin\Debug\Kursovoi proekt.exe.config
+C:\Users\tarun\OneDrive\Рабочий стол\Kursovoi proekt\Kursovoi proekt\bin\Debug\Kursovoi proekt.exe
+C:\Users\tarun\OneDrive\Рабочий стол\Kursovoi proekt\Kursovoi proekt\bin\Debug\Kursovoi proekt.pdb
+C:\Users\tarun\OneDrive\Рабочий стол\Kursovoi proekt\Kursovoi proekt\bin\Debug\EntityFramework.dll
+C:\Users\tarun\OneDrive\Рабочий стол\Kursovoi proekt\Kursovoi proekt\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\tarun\OneDrive\Рабочий стол\Kursovoi proekt\Kursovoi proekt\bin\Debug\EntityFramework.xml
+C:\Users\tarun\OneDrive\Рабочий стол\Kursovoi proekt\Kursovoi proekt\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\tarun\OneDrive\Рабочий стол\Kursovoi proekt\Kursovoi proekt\obj\Debug\Kursovoi proekt.csproj.AssemblyReference.cache
+C:\Users\tarun\OneDrive\Рабочий стол\Kursovoi proekt\Kursovoi proekt\obj\Debug\Kursovoi proekt.csproj.SuggestedBindingRedirects.cache
+C:\Users\tarun\OneDrive\Рабочий стол\Kursovoi proekt\Kursovoi proekt\obj\Debug\AddAdresWin.g.cs
+C:\Users\tarun\OneDrive\Рабочий стол\Kursovoi proekt\Kursovoi proekt\obj\Debug\Autorisation.g.cs
+C:\Users\tarun\OneDrive\Рабочий стол\Kursovoi proekt\Kursovoi proekt\obj\Debug\InfoNotebook.g.cs
+C:\Users\tarun\OneDrive\Рабочий стол\Kursovoi proekt\Kursovoi proekt\obj\Debug\MainWindow.g.cs
+C:\Users\tarun\OneDrive\Рабочий стол\Kursovoi proekt\Kursovoi proekt\obj\Debug\App.g.cs
+C:\Users\tarun\OneDrive\Рабочий стол\Kursovoi proekt\Kursovoi proekt\obj\Debug\Kursovoi proekt_Content.g.cs
+C:\Users\tarun\OneDrive\Рабочий стол\Kursovoi proekt\Kursovoi proekt\obj\Debug\Kursovoi proekt_MarkupCompile.cache
+C:\Users\tarun\OneDrive\Рабочий стол\Kursovoi proekt\Kursovoi proekt\obj\Debug\Kursovoi proekt_MarkupCompile.lref
+C:\Users\tarun\OneDrive\Рабочий стол\Kursovoi proekt\Kursovoi proekt\obj\Debug\AddAdresWin.baml
+C:\Users\tarun\OneDrive\Рабочий стол\Kursovoi proekt\Kursovoi proekt\obj\Debug\Autorisation.baml
+C:\Users\tarun\OneDrive\Рабочий стол\Kursovoi proekt\Kursovoi proekt\obj\Debug\InfoNotebook.baml
+C:\Users\tarun\OneDrive\Рабочий стол\Kursovoi proekt\Kursovoi proekt\obj\Debug\MainWindow.baml
+C:\Users\tarun\OneDrive\Рабочий стол\Kursovoi proekt\Kursovoi proekt\obj\Debug\Kursovoi proekt.g.resources
+C:\Users\tarun\OneDrive\Рабочий стол\Kursovoi proekt\Kursovoi proekt\obj\Debug\Kursovoi_proekt.Properties.Resources.resources
+C:\Users\tarun\OneDrive\Рабочий стол\Kursovoi proekt\Kursovoi proekt\obj\Debug\Kursovoi proekt.csproj.GenerateResource.cache
+C:\Users\tarun\OneDrive\Рабочий стол\Kursovoi proekt\Kursovoi proekt\obj\Debug\Kursovoi proekt.csproj.CoreCompileInputs.cache
+C:\Users\tarun\OneDrive\Рабочий стол\Kursovoi proekt\Kursovoi proekt\obj\Debug\Kursovoi proekt.csproj.CopyComplete
+C:\Users\tarun\OneDrive\Рабочий стол\Kursovoi proekt\Kursovoi proekt\obj\Debug\Kursovoi proekt.exe
+C:\Users\tarun\OneDrive\Рабочий стол\Kursovoi proekt\Kursovoi proekt\obj\Debug\Kursovoi proekt.pdb

@@ -1,0 +1,16 @@
+﻿<Window x:Class="Kursovoi_proekt.Autorisation"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Kursovoi_proekt"
+        mc:Ignorable="d"
+        Title="Autorisation" Height="450" Width="800">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="500" Height="300">
+            <TextBox x:Name="LoginTextBox" FontSize="30" Margin="30"/>
+            <PasswordBox x:Name="PasswordTextBox" FontSize="30" Margin="30"/>
+            <Button FontSize="30" Content="Войти" Width="200" Click="Button_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

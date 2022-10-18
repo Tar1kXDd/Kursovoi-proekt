@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="KursovikBDModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Client">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nickname" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Phone" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" MaxLength="32" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Korzina" Relationship="Self.FK_Korzina_Client" FromRole="Client" ToRole="Korzina" />
+  </EntityType>
+  <EntityType Name="Disk">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Noutbook" Relationship="Self.FK_Noutbook_Disk" FromRole="Disk" ToRole="Noutbook" />
+  </EntityType>
+  <EntityType Name="Firm">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Noutbook" Relationship="Self.FK_Noutbook_Firm" FromRole="Firm" ToRole="Noutbook" />
+  </EntityType>
+  <EntityType Name="Korzina">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idKlient" Type="Int32" />
+    <Property Name="idNiutbook" Type="Int32" />
+    <NavigationProperty Name="Client" Relationship="Self.FK_Korzina_Client" FromRole="Korzina" ToRole="Client" />
+    <NavigationProperty Name="Noutbook" Relationship="Self.FK_Korzina_Noutbook" FromRole="Korzina" ToRole="Noutbook" />
+    <NavigationProperty Name="Zakaz" Relationship="Self.FK_Zakaz_Korzina" FromRole="Korzina" ToRole="Zakaz" />
+    <Property Name="IsZakaz" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Noutbook">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Price" Type="Double" />
+    <Property Name="Processor" Type="Int32" />
+    <Property Name="OZUGB" Type="Double" />
+    <Property Name="DisckType" Type="Int32" />
+    <Property Name="DiskValueMemoryGB" Type="Double" />
+    <Property Name="Videokarta" Type="Int32" />
+    <Property Name="Color" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Diagonal" Type="Double" />
+    <Property Name="Firm" Type="Int32" />
+    <Property Name="Value" Type="Int32" />
+    <NavigationProperty Name="Disk" Relationship="Self.FK_Noutbook_Disk" FromRole="Noutbook" ToRole="Disk" />
+    <NavigationProperty Name="Firm1" Relationship="Self.FK_Noutbook_Firm" FromRole="Noutbook" ToRole="Firm" />
+    <NavigationProperty Name="Korzina" Relationship="Self.FK_Korzina_Noutbook" FromRole="Noutbook" ToRole="Korzina" />
+    <NavigationProperty Name="Processor1" Relationship="Self.FK_Noutbook_Processor" FromRole="Noutbook" ToRole="Processor" />
+    <NavigationProperty Name="Videokarta1" Relationship="Self.FK_Noutbook_Videokarta" FromRole="Noutbook" ToRole="Videokarta" />
+  </EntityType>
+  <EntityType Name="Processor">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Jadra" Type="Int32" />
+    <Property Name="Potoki" Type="Int32" />
+    <NavigationProperty Name="Noutbook" Relationship="Self.FK_Noutbook_Processor" FromRole="Processor" ToRole="Noutbook" />
+  </EntityType>
+  <EntityType Name="StatusZakaz">
+    <Key>
+      <PropertyRef Name="int" />
+    </Key>
+    <Property Name="int" Type="Int32" Nullable="false" />
+    <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Zakaz" Relationship="Self.FK_Zakaz_StatusZakaz" FromRole="StatusZakaz" ToRole="Zakaz" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="TypeMemory">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="Type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Videokarta">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Noutbook" Relationship="Self.FK_Noutbook_Videokarta" FromRole="Videokarta" ToRole="Noutbook" />
+  </EntityType>
+  <EntityType Name="Zakaz">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idKorzina" Type="Int32" />
+    <Property Name="Adres" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="StatusZakaz" Type="Int32" />
+    <NavigationProperty Name="Korzina" Relationship="Self.FK_Zakaz_Korzina" FromRole="Zakaz" ToRole="Korzina" />
+    <NavigationProperty Name="StatusZakaz1" Relationship="Self.FK_Zakaz_StatusZakaz" FromRole="Zakaz" ToRole="StatusZakaz" />
+  </EntityType>
+  <Association Name="FK_Korzina_Client">
+    <End Role="Client" Type="Self.Client" Multiplicity="0..1" />
+    <End Role="Korzina" Type="Self.Korzina" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Client">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Korzina">
+        <PropertyRef Name="idKlient" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Noutbook_Disk">
+    <End Role="Disk" Type="Self.Disk" Multiplicity="0..1" />
+    <End Role="Noutbook" Type="Self.Noutbook" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Disk">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Noutbook">
+        <PropertyRef Name="DisckType" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Noutbook_Firm">
+    <End Role="Firm" Type="Self.Firm" Multiplicity="0..1" />
+    <End Role="Noutbook" Type="Self.Noutbook" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Firm">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Noutbook">
+        <PropertyRef Name="Firm" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Korzina_Noutbook">
+    <End Role="Noutbook" Type="Self.Noutbook" Multiplicity="0..1" />
+    <End Role="Korzina" Type="Self.Korzina" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Noutbook">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Korzina">
+        <PropertyRef Name="idNiutbook" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Zakaz_Korzina">
+    <End Role="Korzina" Type="Self.Korzina" Multiplicity="0..1" />
+    <End Role="Zakaz" Type="Self.Zakaz" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Korzina">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Zakaz">
+        <PropertyRef Name="idKorzina" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Noutbook_Processor">
+    <End Role="Processor" Type="Self.Processor" Multiplicity="0..1" />
+    <End Role="Noutbook" Type="Self.Noutbook" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Processor">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Noutbook">
+        <PropertyRef Name="Processor" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Noutbook_Videokarta">
+    <End Role="Videokarta" Type="Self.Videokarta" Multiplicity="0..1" />
+    <End Role="Noutbook" Type="Self.Noutbook" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Videokarta">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Noutbook">
+        <PropertyRef Name="Videokarta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Zakaz_StatusZakaz">
+    <End Role="StatusZakaz" Type="Self.StatusZakaz" Multiplicity="0..1" />
+    <End Role="Zakaz" Type="Self.Zakaz" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StatusZakaz">
+        <PropertyRef Name="int" />
+      </Principal>
+      <Dependent Role="Zakaz">
+        <PropertyRef Name="StatusZakaz" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="KursovikBDEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Client" EntityType="Self.Client" />
+    <EntitySet Name="Disk" EntityType="Self.Disk" />
+    <EntitySet Name="Firm" EntityType="Self.Firm" />
+    <EntitySet Name="Korzina" EntityType="Self.Korzina" />
+    <EntitySet Name="Noutbook" EntityType="Self.Noutbook" />
+    <EntitySet Name="Processor" EntityType="Self.Processor" />
+    <EntitySet Name="StatusZakaz" EntityType="Self.StatusZakaz" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="TypeMemory" EntityType="Self.TypeMemory" />
+    <EntitySet Name="Videokarta" EntityType="Self.Videokarta" />
+    <EntitySet Name="Zakaz" EntityType="Self.Zakaz" />
+    <AssociationSet Name="FK_Korzina_Client" Association="Self.FK_Korzina_Client">
+      <End Role="Client" EntitySet="Client" />
+      <End Role="Korzina" EntitySet="Korzina" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Noutbook_Disk" Association="Self.FK_Noutbook_Disk">
+      <End Role="Disk" EntitySet="Disk" />
+      <End Role="Noutbook" EntitySet="Noutbook" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Noutbook_Firm" Association="Self.FK_Noutbook_Firm">
+      <End Role="Firm" EntitySet="Firm" />
+      <End Role="Noutbook" EntitySet="Noutbook" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Korzina_Noutbook" Association="Self.FK_Korzina_Noutbook">
+      <End Role="Noutbook" EntitySet="Noutbook" />
+      <End Role="Korzina" EntitySet="Korzina" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Zakaz_Korzina" Association="Self.FK_Zakaz_Korzina">
+      <End Role="Korzina" EntitySet="Korzina" />
+      <End Role="Zakaz" EntitySet="Zakaz" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Noutbook_Processor" Association="Self.FK_Noutbook_Processor">
+      <End Role="Processor" EntitySet="Processor" />
+      <End Role="Noutbook" EntitySet="Noutbook" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Noutbook_Videokarta" Association="Self.FK_Noutbook_Videokarta">
+      <End Role="Videokarta" EntitySet="Videokarta" />
+      <End Role="Noutbook" EntitySet="Noutbook" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Zakaz_StatusZakaz" Association="Self.FK_Zakaz_StatusZakaz">
+      <End Role="StatusZakaz" EntitySet="StatusZakaz" />
+      <End Role="Zakaz" EntitySet="Zakaz" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
